@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="54dp"
+        android:layout_height="22dp"
+        android:text="@string/title"
+        android:textColor="@color/success"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.081"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.018" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/todo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.012"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.019"
+        app:srcCompat="@drawable/ic_baseline_wifi_tethering_24" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginEnd="7dp"
+        android:background="@color/gray"
+        android:padding="4dp"
+        android:text="@string/module_text"
+        android:textAlignment="center"
+        android:textColor="@color/secondary"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title"
+        app:layout_constraintVertical_bias="0.013" />
+
+    <TableLayout
+        android:id="@+id/tableLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="6dp"
+        android:stretchColumns="*"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.001">
+
+        <TableRow
+            android:id="@+id/row1"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            tools:ignore="UselessParent">
+
+            <TextView
+                android:id="@+id/BoxNo_label"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/secondary"
+                android:padding="2dp"
+                android:layout_margin="1dp"
+                android:text="@string/BoxNo_label"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/BoxNo_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/light"
+                android:padding="2dp"
+                android:layout_margin="1dp"
+                android:text="@string/BoxNo_text"
+                android:textAlignment="center"
+                android:textColor="@color/secondary"
+                android:textSize="16sp" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/row2"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            tools:ignore="UselessParent">
+
+            <TextView
+                android:id="@+id/line_label"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/secondary"
+                android:padding="2dp"
+                android:layout_margin="1dp"
+                android:text="@string/line_label"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/line_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/light"
+                android:padding="2dp"
+                android:layout_margin="1dp"
+                android:text="@string/line_text"
+                android:textAlignment="center"
+                android:textColor="@color/secondary"
+                android:textSize="16sp" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/row3"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            tools:ignore="UselessParent">
+
+            <TextView
+                android:id="@+id/mdseq_label"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/secondary"
+                android:padding="2dp"
+                android:layout_margin="1dp"
+                android:text="@string/mdseq_label"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/mdseq_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/light"
+                android:padding="2dp"
+                android:layout_margin="1dp"
+                android:text="@string/mdseq_text"
+                android:textAlignment="center"
+                android:textColor="@color/secondary"
+                android:textSize="16sp" />
+
+        </TableRow>
+
+    </TableLayout>
+
+    <TableLayout
+        android:id="@+id/tableLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:background="@color/gray"
+        android:padding="8dp"
+        android:stretchColumns="*"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout2"
+        app:layout_constraintVertical_bias="0.001">
+
+        <TableRow
+            android:id="@+id/row31"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            tools:ignore="UselessParent">
+
+            <TextView
+                android:id="@+id/Total_label"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="1dp"
+                android:background="@color/primary"
+                android:padding="6dp"
+                android:layout_margin="1dp"
+                android:text="@string/total_label"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/Read_label"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="1dp"
+                android:background="@color/success"
+                android:padding="6dp"
+                android:layout_margin="1dp"
+                android:text="@string/read_label"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/Remain_label"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="1dp"
+                android:background="@color/warning"
+                android:padding="6dp"
+                android:layout_margin="1dp"
+                android:text="@string/remain_label"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/row32"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            tools:ignore="UselessParent">
+
+            <TextView
+                android:id="@+id/total_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/secondary"
+                android:padding="6dp"
+                android:layout_margin="1dp"
+                android:text="@string/total_text"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/read_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/secondary"
+                android:padding="6dp"
+                android:layout_margin="1dp"
+                android:text="@string/read_text"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/remain_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/secondary"
+                android:padding="6dp"
+                android:layout_margin="1dp"
+                android:text="@string/remain_text"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+        </TableRow>
+
+    </TableLayout>
+
+    <TableLayout
+        android:id="@+id/tableLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="6dp"
+        android:background="@color/light"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout3"
+        tools:layout_editor_absoluteX="6dp">
+
+        <TableRow>
+
+            <TextView
+                style="@style/th"
+                android:text="@string/boxseq_label" />
+
+            <TextView
+                style="@style/th"
+                android:text="@string/partcode_label" />
+
+            <TextView
+                style="@style/th"
+                android:text="@string/address_label" />
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                style="@style/td"
+                android:text="053" />
+
+            <TextView
+                style="@style/td"
+                android:text="R30R" />
+
+            <TextView
+                style="@style/td"
+                android:text="T2-06-07" />
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                style="@style/td"
+                android:text="054" />
+
+            <TextView
+                style="@style/td"
+                android:text="BR30" />
+
+            <TextView
+                style="@style/td"
+                android:text="T2-06-08" />
+
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                style="@style/td"
+                android:text="055" />
+
+            <TextView
+                style="@style/td"
+                android:text="4106" />
+
+            <TextView
+                style="@style/td"
+                android:text="T2-06-09" />
+
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                style="@style/td"
+                android:text="056" />
+
+            <TextView
+                style="@style/td"
+                android:text="M51E" />
+
+            <TextView
+                style="@style/td"
+                android:text="T2-06-11" />
+
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                style="@style/td"
+                android:text="057" />
+
+            <TextView
+                style="@style/td"
+                android:text="307R" />
+
+            <TextView
+                style="@style/td"
+                android:text="T2-06-12" />
+
+
+        </TableRow>
+
+    </TableLayout>
+
+    <Button
+        android:id="@+id/bt_skip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/purple"
+        android:text="@string/skip"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.981"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout4"
+        app:layout_constraintVertical_bias="0.032" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

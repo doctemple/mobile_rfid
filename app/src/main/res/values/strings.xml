@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">DirectPacking</string>
+    <string name="title">RFID</string>
+    <string name="todo">RFID</string>
+    <string name="module">MODULE :</string>
+    <string name="BoxNo_label">BOX NO</string>
+    <string name="line_label">PACKING LINE</string>
+    <string name="mdseq_label">MD SEQ</string>
+    <string name="total_label">TOTAL</string>
+    <string name="read_label">READ</string>
+    <string name="remain_label">TOTAL</string>
+    <string name="boxseq_label">BOX SEQ</string>
+    <string name="partcode_label">PART CODE</string>
+    <string name="address_label">ADDRESS</string>
+    <string name="skip">SKIP</string>
+
+    <!-- Sample Data -->
+    <string name="module_text">MODULE : 202009040604</string>
+    <string name="BoxNo_text">SP2</string>
+    <string name="line_text">Q2</string>
+    <string name="mdseq_text">34</string>
+    <string name="total_text">12</string>
+    <string name="read_text">4</string>
+    <string name="remain_text">8</string>
+</resources>
